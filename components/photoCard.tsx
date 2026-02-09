@@ -21,7 +21,7 @@ export function PhotoCard() {
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent className="">
+      <CarouselContent className="items-center">
         {["/gbu-1.jpeg","/gbu-2.jpeg","/gbu-3.jpeg"].map((src, index) => (
           <CarouselItem key={index} className="w-full h-full">
             <div className="p-1">

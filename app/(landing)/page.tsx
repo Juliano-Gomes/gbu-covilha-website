@@ -14,7 +14,7 @@ export default async function HomePage(){
                             O Grupo Bíblico Universitário tem na sua génese a iniciativa estudantil, sendo portanto um movimento feito de estudantes para estudantes. São os estudantes que assumem os principais papéis de liderança nos vários grupos locais distribuídos pelo país.
                         </p>
 
-                        <div>
+                        <div className="flex flex-col gap-3">
                             <h1 className="items-center text-[13px] flex gap-2 font-mono text-[#fff069]">
                                 <MapPin size={19} />
                                 <span>
@@ -22,7 +22,9 @@ export default async function HomePage(){
                                 </span>
                             </h1>
 
-                            <p></p>
+                            <p className="font-mono">
+                                és meu convidado para a proxima reunia da GBU COVILHA 
+                            </p>
 
                         </div>
                     </div>
