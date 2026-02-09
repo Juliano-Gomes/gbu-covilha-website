@@ -7,7 +7,7 @@ import { useState } from "react"
 export const Header=()=>{
     const [open,setOpen] = useState(false)
     return(
-        <section className="fixed z-[478598349] bg-[#617a8b] flex p-2 items-center justify-around  font-sans top-0 min-w-[100vw] w-screen h-[80px]">
+        <section className="fixed z-[478598349] bg-[#617a8b] flex p-2 items-center justify-around  font-sans top-0 min-w-[100%] w-screen h-[80px]">
             <section className="group cursor-pointer flex gap-2 items-center">
                 <div className="flex text-[25px] ">
                     <span className="text-[#83e5d5]">G</span>
