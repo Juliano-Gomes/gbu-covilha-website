@@ -3,7 +3,7 @@ import Link from "next/link";
 export default async function AboutPage(){
     return(
         <section className="pt-[90px]  h-[100vh] w-[100vw] flex flex-col items-center gap-4 justify-center">
-            <section className="flex items-center justify-center md:w-[500px] font-mono w-[450px]">
+            <section className="flex items-center justify-center font-mono w-[90%]  sm:w-[500px] md:w-[550px]">
                 <p>
                     O Grupo Bíblico Universitário (GBU) é um espaço para questões honestas sobre a Bíblia, a vida académica e a sociedade.
                     <br />

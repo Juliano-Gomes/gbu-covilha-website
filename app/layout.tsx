@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto , Poppins} from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header-component";
+import { FooterComponent } from "@/components/footer-componet";
 
 const RobotoFont = Roboto({
   variable: "--font-roboto",
@@ -24,12 +25,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${RobotoFont.variable} ${PoppinsFont.variable} bg-[#617a8b] w-screen antialiased`}
+        className={`${RobotoFont.variable} ${PoppinsFont.variable} gap-3 bg-[#617a8b] w-screen flex flex-col antialiased`}
       >
         <Header/>
         <main>
           {children}
         </main>
+        <FooterComponent/>
       </body>
     </html>
   );

@@ -8,7 +8,7 @@ export const Header=()=>{
     const [open,setOpen] = useState(false)
     return(
         <section className="fixed z-[478598349] bg-[#617a8b] flex p-2 items-center justify-around  font-sans top-0 min-w-[100%] w-screen h-[80px]">
-            <section className="group cursor-pointer flex gap-2 items-center">
+            <Link href={"/"} className="group cursor-pointer flex gap-2 items-center">
                 <div className="flex text-[25px] ">
                     <span className="text-[#83e5d5]">G</span>
                     <span className="text-[#fff069]">B</span>
@@ -17,11 +17,11 @@ export const Header=()=>{
                 <span className="text-[#fff069] text-sm transition-all group-hover:translate-x-[15px] translate-y-[-9px]">
                     covilha
                 </span>
-            </section>
+            </Link >
             <section className="w-[360px]  hidden p-2 sm:flex items-center justify-center">
                 <ul className="flex gap-4 font-sans">
                     <li>
-                        <Link href={"/"} className="flex gap-1 hover:text-[#83e5d5] transition-all hover:font-bold">
+                        <Link href={"/"} onClick={()=>setOpen(false)} className="flex gap-1 hover:text-[#83e5d5] transition-all hover:font-bold">
                             <House size={20}/>
                             <span>
                                 home
@@ -29,12 +29,12 @@ export const Header=()=>{
                         </Link>
                     </li>
                     <li>
-                        <Link href={"/sobre"} className="flex gap-1 hover:text-[#ff9385] transition-all hover:font-bold">
+                        <Link href={"/sobre"} onClick={()=>setOpen(false)} className="flex gap-1 hover:text-[#ff9385] transition-all hover:font-bold">
                             Sobre a GBU
                         </Link>
                     </li>
                     <li>
-                        <Link className="flex gap-1 hover:text-[#fff069] transition-all hover:font-bold" href={"https://gbu.pt/grupos-locais-2/"}>
+                        <Link onClick={()=>setOpen(false)} className="flex gap-1 hover:text-[#fff069] transition-all hover:font-bold" href={"https://gbu.pt/grupos-locais-2/"}>
                             GBU na sua cidade
                         </Link>
                     </li>
@@ -51,11 +51,11 @@ export const Header=()=>{
                         Menu
                     </span>
                 </div>
-                <section className={`z-[759345] absolute left-[15px] top-[110%]  p-2 ${open ? "flex" : "hidden" } transition-all rounded ease-in-out bg-[#6F8FAF] duration-150 w-[95%] sm:w-[80%]  h-[280px] flex  gap-2  `}>
+                <section className={`z-[759345] absolute left-[15px] top-[110%]  p-2 ${open ? "flex" : "hidden" } transition-all duration-100 rounded ease-in-out bg-[#6F8FAF] duration-150 w-[95%] sm:w-[80%]  h-[280px] flex  gap-2  `}>
                     <div className="flex flex-col">
                         <ul className="flex gap-4 flex-col p-4 font-sans">
                             <li className="hover:bg-[#fff069] w-[250px] p-2 rounded transition-all">
-                                <Link href={"/"} className="flex gap-1  hover:text-[#83e5d5] transition-all hover:font-bold">
+                                <Link onClick={()=>setOpen(false)} href={"/"} className="flex gap-1  hover:text-[#83e5d5] transition-all hover:font-bold">
                                     <House size={20}/>
                                     <span>
                                         home
@@ -63,12 +63,12 @@ export const Header=()=>{
                                 </Link>
                             </li>
                             <li className="hover:bg-[#83e5d5] w-[250px] p-2 rounded transition-all">
-                                <Link href={"/sobre"} className="flex gap-1 hover:text-[#ff9385] transition-all hover:font-bold">
+                                <Link onClick={()=>setOpen(false)} href={"/sobre"} className="flex gap-1 hover:text-[#ff9385] transition-all hover:font-bold">
                                     Sobre a GBU
                                 </Link>
                             </li>
                             <li className="hover:bg-[#ff9385] w-[250px] p-2 rounded transition-all" >
-                                <Link className="flex gap-1 hover:text-[#fff069] transition-all hover:font-bold" href={"https://gbu.pt/grupos-locais-2/"}>
+                                <Link onClick={()=>setOpen(false)} className="flex gap-1 hover:text-[#fff069] transition-all hover:font-bold" href={"https://gbu.pt/grupos-locais-2/"}>
                                     GBU na sua cidade
                                 </Link>
                             </li>
