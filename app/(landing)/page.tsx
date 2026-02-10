@@ -1,11 +1,13 @@
 import { PhotoCard } from "@/components/photoCard";
+import { WordOdDay } from "@/components/word-of-day-rander";
 import { MapPin } from "lucide-react";
+import { FaBible } from "react-icons/fa";
 
 
 export default async function HomePage(){
     return(
-        <section className="pt-[90px] w-full flex items-center ">
-            <section className="min-h-[100vh] md:flex-row md:items-start md:justify-center flex flex-col items-center justify-start w-full p-4 gap-4">
+        <section className="pt-[90px] w-screen max-w-[100vw] flex flex-col items-center ">
+            <section className="min-[653]:h-[100vh] sm:h-[max-content] md:flex-row md:items-start md:justify-center flex flex-col items-center justify-start w-full p-4 gap-4">
                 <PhotoCard/>
                 <section className="p-2 flex flex-col w-[90%] gap-3 sm:w-[500px] md:w-[550px]">
                     <h1 className="font-mono  text-2xl text-[#fff069]">GBU Covilha</h1>
@@ -30,6 +32,16 @@ export default async function HomePage(){
                         </div>
                     </div>
                 </section>
+            </section>
+            <section className="w-[90%]  sm:w-[90%] md:w-[80vw] lg:70vw flex flex-col gap-4">
+                <h1 className="font-mono text-2xl flex wrap gap-3 items-center p-2">
+                    <FaBible color="#83e5d5"/>
+                    <span className="text-[#fff069] font-medium">
+                        Palavra do dia
+                    </span>
+                </h1>
+                <WordOdDay/>
+
             </section>
         </section>
     )

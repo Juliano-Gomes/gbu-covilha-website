@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${RobotoFont.variable} ${PoppinsFont.variable} gap-3 bg-[#617a8b] w-screen flex flex-col antialiased`}
+        className={`${RobotoFont.variable} ${PoppinsFont.variable} gap-3 bg-[#617a8b] w-[100vw] flex flex-col antialiased`}
       >
         <Header/>
         <main>

@@ -17,7 +17,7 @@ export function PhotoCard() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-[466px]  group md:w-[600px] cursor-pointer"
+      className="w-[460px]  group md:w-[600px] cursor-pointer"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -25,7 +25,7 @@ export function PhotoCard() {
         {["/gbu-1.jpeg","/gbu-2.jpeg","/gbu-3.jpeg"].map((src, index) => (
           <CarouselItem key={index} className="w-full h-full">
             <div className="p-1">
-                <Image quality={100} className="rounded w-full h-full " src={src} width={500} height={500} alt="gbu"/>
+                <Image quality={100} className="rounded w-full h-full " src={src} width={450} height={450} alt="gbu"/>
             </div>
           </CarouselItem>
         ))}
