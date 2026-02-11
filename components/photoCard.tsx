@@ -22,7 +22,7 @@ export function PhotoCard() {
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent className="items-center">
-        {["/gbu-1.jpeg","/gbu-2.jpeg","/gbu-3.jpeg","/gbu-4.png","/gbu-5.png","/gbu-6.png"].map((src, index) => (
+        {["/gbu-1.jpeg","/gbu-2.jpeg","/gbu-3.jpeg"].map((src, index) => (
           <CarouselItem key={index} className="w-full h-full">
             <div className="p-1">
                 <Image quality={100} className="rounded w-full h-full " src={src} width={450} height={450} alt="gbu"/>
