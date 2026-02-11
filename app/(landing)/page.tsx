@@ -33,14 +33,20 @@ export default async function HomePage(){
                     </div>
                 </section>
             </section>
-            <section className="w-[90%]  sm:w-[90%] md:w-[80vw] lg:70vw flex flex-col gap-4">
-                <h1 className="font-mono text-2xl flex wrap gap-3 items-center p-2">
-                    <FaBible color="#83e5d5"/>
-                    <span className="text-[#fff069] font-medium">
-                        Palavra do dia
-                    </span>
-                </h1>
-                <WordOdDay/>
+            <section className="w-[90%]  sm:w-[90%] md:w-[85vw] lg:70vw p-2 flex flex-col flex-wrap md:flex-row gap-4">
+                <div className="flex flex-col gap-3">
+                    <h1 className="font-mono text-2xl flex wrap gap-3 items-center ">
+                        <FaBible color="#83e5d5"/>
+                        <span className="text-[#fff069] font-medium">
+                            Palavra do dia
+                        </span>
+                    </h1>
+                    <WordOdDay/>
+                </div>
+
+                <div className="min-w-[300px]  grow p-2 rounded font-mono">
+                    
+                </div>
 
             </section>
         </section>

@@ -3,8 +3,8 @@ import { BsInstagram } from "react-icons/bs"
 
 export const FooterComponent = ()=>{
     return(
-        <section className="w-screen flex items-center justify-center gap-4 p-3 min-h-[30vh]">
-            <div className="flex flex-col gap-2 w-[90%] sm:w-[500px] md:w-[550px]">
+        <section className="w-screen  flex items-center justify-center gap-4 p-3 min-h-[30vh]">
+            <div className="flex flex-col gap-2 w-[90%]  p-2 sm:w-[550px] md:w-[90%]">
                 <h1 className="text-2xl font-sans">Contatos</h1>
                 <div className="flex flex-col gap-2">
                     <Link href={"https://www.instagram.com/gbucovilha/"} className="font-mono flex text-white  underline decoration-white  gap-2 items-center font-medium">

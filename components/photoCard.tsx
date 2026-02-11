@@ -17,7 +17,7 @@ export function PhotoCard() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-[460px]  group md:w-[600px] cursor-pointer"
+      className="w-[90%] sm:w-[460px]  group md:w-[600px] cursor-pointer"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >

@@ -27,7 +27,7 @@ export const WordOdDay = ()=>{
                     }
                 }>
                     {spin && <Loader className={`animate-spin size-[18px]`}/>}
-                    generate
+                     mais
                 </span>
                 <span className="font-mono text-[14px]  p-2 w-full flex justify-end">{Word.localizacao}</span>
             </div>
